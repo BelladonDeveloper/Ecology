@@ -1,10 +1,6 @@
 {
   "dependencies": {
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    "com.unity.cinemachine": "2.6.11",
->>>>>>> cc406eced5658a642960f4e27829f2dc8ad80510
 =======
     "com.unity.cinemachine": "2.6.11",
 >>>>>>> cc406eced5658a642960f4e27829f2dc8ad80510
