@@ -1418,7 +1418,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0422\u0415\u041A\u0421\u0422 \u041D\u041F\u0421"
+  m_text: "\u0422\u0415\u041A\u0421\u0422 \u041D\u041F\u0421 \u0424\u0418\u041D\u0410\u041B\u042C\u041D\u042B\u0419"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1899,7 +1899,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1091229062
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3076,8 +3076,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0417\u0414\u0415\u0421\u042C \u041F\u0415\u0420\u0412\u042B\u0419 \u0422\u0415\u041A\u0421\u0422
-    \u0414\u0418\u0410\u041B\u041E\u0413\u0410(\u0433\u043E\u0432\u043E\u0440\u0438\u043C
+  m_text: "\u0417\u0414\u0415\u0421\u042C \u0424\u0418\u041D\u0410\u041B\u042C\u041D\u042B\u0419
+    \u0422\u0415\u041A\u0421\u0422 \u0414\u0418\u0410\u041B\u041E\u0413\u0410(\u0433\u043E\u0432\u043E\u0440\u0438\u043C
     \n\u043C\u044B)\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
