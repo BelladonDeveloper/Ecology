@@ -27,7 +27,7 @@ public class NPC_Task : MonoBehaviour
         }
         if(findial == true)
         {
-            Time.timeScale = 1;
+            //Time.timeScale = 1;
             QE.Quest1 = false;
             dialogue.SetActive(false);
         }
@@ -37,7 +37,7 @@ public class NPC_Task : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             if(QE.endQuest1 == false)
             {
                 dialogue.SetActive(true);
