@@ -14,7 +14,8 @@ public class PlayerController : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
     }
-
+    //Player jump
+    
     // Update is called once per frame
     private void FixedUpdate()
     {
@@ -29,5 +30,10 @@ public class PlayerController : MonoBehaviour
          {
              _animator.SetBool("IsWalking", false);
          }
+    }
+
+    void OnJumpBottonDown()
+    {
+        _rigidbody.velocity = Vector3.up * 12f;
     }
 }
