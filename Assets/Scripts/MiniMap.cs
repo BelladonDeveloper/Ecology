@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class MiniMap : MonoBehaviour
 {
-    [SerializeField] private Transform _player;
+    [SerializeField] private Transform Player;
 
     private void LateUpdate()
     {
 
-        Vector3 newPosition = _player.position;
+        Vector3 newPosition = Player.position;
         newPosition.y = transform.position.y;
         transform.position = newPosition;
 
-        transform.rotation = Quaternion.Euler(90f, _player.eulerAngles.y, 0f);
+        transform.rotation = Quaternion.Euler(90f, Player.eulerAngles.y, 0f);
 
     }
 }
