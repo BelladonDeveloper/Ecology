@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private FixedJoystick _joystick;
     [SerializeField] private Animator _animator;
     [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _JumpSpeed = 6f;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,8 +33,8 @@ public class PlayerController : MonoBehaviour
          }
     }
 
-    void OnJumpBottonDown()
+    public void OnJumpBottonDown()
     {
-        _rigidbody.velocity = Vector3.up * 12f;
+        _rigidbody.velocity = Vector3.up * _JumpSpeed;
     }
 }
