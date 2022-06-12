@@ -52,11 +52,15 @@ public class PlayerController : MonoBehaviour
         if(collision.gameObject.tag == "Ground")
         {
             _isGround = true;
+            Debug.Log("111");
         }
-        else
-        {
-            _isGround = false;
-        }
+       
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        _isGround = false;
+        Debug.Log("222");
     }
 
 }
