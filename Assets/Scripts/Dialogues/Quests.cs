@@ -7,13 +7,24 @@ public class Quests : MonoBehaviour
     public bool Quest1;
     public GameObject Text1;
     public bool endQuest1;
-    // Start is called before the first frame update
-    void Start()
+    public int Counter = 0;
+    public int MaxCount = 10;
+
+    private void Start()
     {
-        
+        QuestObject.PickUpQuestObject += CheckNumberObjects;
     }
 
-    // Update is called once per frame
+    void CheckNumberObjects()
+    {
+        Counter++;
+        if(Counter == MaxCount)
+        {
+            QuestObject.PickUpQuestObject -= CheckNumberObjects;
+            endQuest1 = true;
+        }
+    }
+
     void Update()
     {
         if(endQuest1 == false)
@@ -32,5 +43,12 @@ public class Quests : MonoBehaviour
             Text1.SetActive(false);
         }
         
+    }
+
+
+    private void OnDestroy()
+    {
+        QuestObject.PickUpQuestObject -= CheckNumberObjects;
+
     }
 }
