@@ -8,7 +8,7 @@ public class DialogueNC : MonoBehaviour
     public GameObject Text1;
     public GameObject Text2;
     public bool enddial;
-    public GameObject QuestObject;
+    [SerializeField] private List<GameObject> questfoods = new List<GameObject>();
     
 
 
@@ -28,7 +28,11 @@ public class DialogueNC : MonoBehaviour
                 if(enddial == false)
                 {
                     isText1 = true;
-                    QuestObject.SetActive(true);
+                    for (int i = 0; i < questfoods.Count; i++)
+                    {
+                        questfoods[i].SetActive(true);
+
+                    }
                     npc_task.end_Dialogue = true;
                 }
                 else

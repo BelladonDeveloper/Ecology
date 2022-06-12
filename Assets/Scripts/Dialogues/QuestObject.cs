@@ -1,26 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
 
 public class QuestObject : MonoBehaviour
 {
     public Quests QEvent;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static event Action PickUpQuestObject; 
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            QEvent.endQuest1 = true;
+            PickUpQuestObject?.Invoke();
             Destroy(gameObject);
         }
     }
