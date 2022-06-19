@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1919368760593702553}
   - component: {fileID: 7492284475643290799}
   - component: {fileID: 3802577829836593238}
-  - component: {fileID: 5003974419370684073}
   - component: {fileID: 5005453219088423830}
   m_Layer: 0
   m_Name: Stone_Path_EdgePiece
@@ -83,20 +82,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5003974419370684073
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3240813199166909578}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4408827098800430537, guid: bbe04970bb9d1774aa834e9af4a60b38, type: 3}
 --- !u!65 &5005453219088423830
 BoxCollider:
   m_ObjectHideFlags: 0
