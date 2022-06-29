@@ -392,7 +392,7 @@ GameObject:
   m_Layer: 8
   m_Name: PlayerArmature
   m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -403,9 +403,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144698804747254857}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4689604330170598677}
   - {fileID: 6747266309937619489}
@@ -446,7 +446,7 @@ CharacterController:
   m_Height: 1.8
   m_Radius: 0.28
   m_SlopeLimit: 45
-  m_StepOffset: 0.25
+  m_StepOffset: 0.5
   m_SkinWidth: 0.02
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0.93, z: 0}
