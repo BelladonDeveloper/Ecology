@@ -20063,10 +20063,6 @@ PrefabInstance:
       propertyPath: Text1
       value: 
       objectReference: {fileID: 831138286}
-    - target: {fileID: 6854255348129699468, guid: baee1cf347535fe419cea1138c0ee5c1, type: 3}
-      propertyPath: MaxCount
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6854255348129699469, guid: baee1cf347535fe419cea1138c0ee5c1, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -80348,5 +80344,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogJody
       objectReference: {fileID: 0}
+    - target: {fileID: 2094314980225105526, guid: 4d1390030588bb14c88e4bb3dfe08a5b, type: 3}
+      propertyPath: npc_task
+      value: 
+      objectReference: {fileID: 179932938}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d1390030588bb14c88e4bb3dfe08a5b, type: 3}
