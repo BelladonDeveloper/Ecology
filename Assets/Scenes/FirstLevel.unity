@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465797, g: 0.49641377, b: 0.57481736, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657993, g: 0.49641424, b: 0.57481813, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16170,7 +16170,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446216349}
-  m_LocalRotation: {x: 0.105880454, y: 0.6991347, z: -0.10588045, w: 0.6991347}
+  m_LocalRotation: {x: 0.105880484, y: 0.69913465, z: -0.10588047, w: 0.69913477}
   m_LocalPosition: {x: -13.539999, y: 10.54, z: 62.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -18961,10 +18961,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Minimap
       objectReference: {fileID: 0}
-    - target: {fileID: 2714550736133635522, guid: 92ab6310e9cb7c346b762950b699a856, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2714550736133635523, guid: 92ab6310e9cb7c346b762950b699a856, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -19013,10 +19009,6 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1883313826}
-    - target: {fileID: 2714550736907853195, guid: 92ab6310e9cb7c346b762950b699a856, type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 2359
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92ab6310e9cb7c346b762950b699a856, type: 3}
 --- !u!1001 &522096113
@@ -71399,7 +71391,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905329628}
-  m_LocalRotation: {x: 0.105880454, y: 0.6991347, z: -0.10588045, w: 0.6991347}
+  m_LocalRotation: {x: 0.105880484, y: 0.69913465, z: -0.10588047, w: 0.69913477}
   m_LocalPosition: {x: -13.539999, y: 10.54, z: 62.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
