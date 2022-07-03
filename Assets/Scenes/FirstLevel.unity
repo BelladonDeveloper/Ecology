@@ -16170,8 +16170,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446216349}
-  m_LocalRotation: {x: 0.18241006, y: 0.6831739, z: -0.18241003, w: 0.68317395}
-  m_LocalPosition: {x: -7.809999, y: 12.92, z: 62.42}
+  m_LocalRotation: {x: 0.10588047, y: 0.6991347, z: -0.10588047, w: 0.6991347}
+  m_LocalPosition: {x: -7.809999, y: 10.27, z: 62.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -41546,7 +41546,7 @@ MonoBehaviour:
   - {fileID: 1369001872449898, guid: 2f2e54b9f3898eb46a0b47f9a4d4c52b, type: 3}
   - {fileID: 1541859410316496, guid: 4fe5a7bcbee1651418ea031a87ff53e4, type: 3}
   - {fileID: 1638444836145330, guid: 031f4f4b1f7d8b7489da0919e18ceac3, type: 3}
-  - {fileID: 1000011038145264, guid: 45c7dddf851acbb4e94a8fc0ead66eed, type: 3}
+  - {fileID: 1541859410316496, guid: 4fe5a7bcbee1651418ea031a87ff53e4, type: 3}
   _badFood:
   - {fileID: 1000011448446114, guid: 8155176e03f33f44884efb0dd767197c, type: 3}
   - {fileID: 1000011314148014, guid: 91e1f9e8a986ed344be385215d3145b3, type: 3}
@@ -80344,10 +80344,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogJody
       objectReference: {fileID: 0}
-    - target: {fileID: 2094314980225105526, guid: 4d1390030588bb14c88e4bb3dfe08a5b, type: 3}
-      propertyPath: spawner
-      value: 
-      objectReference: {fileID: 1113447731}
     - target: {fileID: 2094314980225105526, guid: 4d1390030588bb14c88e4bb3dfe08a5b, type: 3}
       propertyPath: npc_task
       value: 
