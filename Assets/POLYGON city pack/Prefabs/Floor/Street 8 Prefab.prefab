@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4953652439784952}
-  - component: {fileID: 4255809738105682924}
   m_Layer: 0
   m_Name: Street 8 Prefab
   m_TagString: Untagged
@@ -32,19 +31,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4255809738105682924
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1416373601309472}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: -4.07, y: 0.29, z: 3.68}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1695049543612290
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,7 +42,7 @@ GameObject:
   - component: {fileID: 4392699554287472}
   - component: {fileID: 33408145425434532}
   - component: {fileID: 23691266434891288}
-  - component: {fileID: 64255087825378024}
+  - component: {fileID: 3753454123268848962}
   m_Layer: 0
   m_Name: street
   m_TagString: Untagged
@@ -127,8 +113,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64255087825378024
-MeshCollider:
+--- !u!65 &3753454123268848962
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -137,7 +123,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 72e65272e9752d842a914dd27fd86306, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.020000005, z: 5.4279566e-19}
+  m_Center: {x: -0.000000059604645, y: -0.00000011920929, z: 0.0010000004}
