@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
 
     [SerializeField] private int numberOfGoodFoods = 10;
 
-    private void Start()
+    public void CreateFood()
     {
         for (int i = 0; i < numberOfGoodFoods; i++)
         {
