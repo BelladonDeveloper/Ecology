@@ -7,17 +7,17 @@ public class NPC_Task : MonoBehaviour
     public GameObject dialogue2;
     public Quests QE;
     public bool findial;
-    
+
     void Update()
     {
-        if(end_Dialogue == true)
+        if (end_Dialogue == true)
         {
             Time.timeScale = 1;
             QE.Quest1 = true;
             dialogue.SetActive(false);
 
         }
-        if(findial == true)
+        if (findial == true)
         {
             Time.timeScale = 1;
             QE.Quest1 = false;
@@ -27,17 +27,19 @@ public class NPC_Task : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             Time.timeScale = 0;
-            if(QE.endQuest1 == false)
+            if (QE.endQuest1 == false)
             {
                 dialogue.SetActive(true);
             }
             else
             {
                 dialogue2.SetActive(true);
-            }            
+
+                print("Finish quest )");
+            }
         }
     }
 }

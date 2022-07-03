@@ -8,9 +8,8 @@ public class DialogueNC : MonoBehaviour
     public GameObject Text1;
     public GameObject Text2;
     public bool enddial;
-    [SerializeField] private List<GameObject> questfoods = new List<GameObject>();
-    
 
+    [SerializeField] private Spawner spawner;
 
     private bool isText1 = true;
     
@@ -28,11 +27,9 @@ public class DialogueNC : MonoBehaviour
                 if(enddial == false)
                 {
                     isText1 = true;
-                    for (int i = 0; i < questfoods.Count; i++)
-                    {
-                        questfoods[i].SetActive(true);
 
-                    }
+                    spawner.CreateFood();
+
                     npc_task.end_Dialogue = true;
                 }
                 else
