@@ -6,11 +6,12 @@ TagManager:
   tags:
   - CinemachineTarget
   - Ground
+  - Water
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - FOOD
   - Water
   - UI
   - 
@@ -18,7 +19,7 @@ TagManager:
   - Ground
   - 
   - 
-  - 
+  - Minimap mark
   - 
   - 
   - 
