@@ -41550,7 +41550,7 @@ MonoBehaviour:
   - {fileID: 1369001872449898, guid: 2f2e54b9f3898eb46a0b47f9a4d4c52b, type: 3}
   - {fileID: 1541859410316496, guid: 4fe5a7bcbee1651418ea031a87ff53e4, type: 3}
   - {fileID: 1638444836145330, guid: 031f4f4b1f7d8b7489da0919e18ceac3, type: 3}
-  - {fileID: 1541859410316496, guid: 4fe5a7bcbee1651418ea031a87ff53e4, type: 3}
+  - {fileID: 1000011038145264, guid: 45c7dddf851acbb4e94a8fc0ead66eed, type: 3}
   _badFood:
   - {fileID: 1000011448446114, guid: 8155176e03f33f44884efb0dd767197c, type: 3}
   - {fileID: 1000011314148014, guid: 91e1f9e8a986ed344be385215d3145b3, type: 3}

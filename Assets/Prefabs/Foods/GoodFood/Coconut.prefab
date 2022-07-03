@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 4000012914065570}
   - component: {fileID: 33000012481373088}
   - component: {fileID: 23000011704802928}
+  - component: {fileID: -5439813276624740328}
+  - component: {fileID: 2524596531496417767}
   m_Layer: 3
   m_Name: Coconut
-  m_TagString: Untagged
+  m_TagString: GoodFood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,6 +84,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-5439813276624740328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011038145264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b53fa6a4ebc66547bd0e1f6bce0fb2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGoodFood: 1
+--- !u!135 &2524596531496417767
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011038145264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.054280087
+  m_Center: {x: 0, y: -0.000000024214387, z: -0.000000039115548}
 --- !u!1 &4166189714154285132
 GameObject:
   m_ObjectHideFlags: 0
