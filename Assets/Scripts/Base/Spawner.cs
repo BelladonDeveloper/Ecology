@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
 
     [SerializeField] private int numberOfGoodFoods = 10;
 
-    private void Start()
+    public void CreateFood()
     {
         for (int i = 0; i < numberOfGoodFoods; i++)
         {
@@ -23,13 +23,15 @@ public class Spawner : MonoBehaviour
             _targets.RemoveAt(randomTargetIndex);
         }
 
-        for (int i = 0; i < _targets.Count; i++)
+        while (_targets.Count > 0)
         {
             int randomTargetIndex = Random.Range(0, _targets.Count - 1);
             int randomFoodIndex = Random.Range(0, _badFood.Count - 1);
 
             GameObject newFood = Instantiate(_badFood[randomFoodIndex], transform);
             newFood.transform.position = _targets[randomTargetIndex].position;
+
+            _targets.RemoveAt(randomTargetIndex);
         }
     }
 }

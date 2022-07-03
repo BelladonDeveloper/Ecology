@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 15, y: 15}
+  m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2714550735764855383
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 58e0ff2ba3c4ab54dbfd1460a991b021, type: 3}
+  m_Texture: {fileID: 2800000, guid: ebf47f8cc65d2e548bfadd79b0724c08, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -291,7 +291,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2714550736907853197}
   - component: {fileID: 2714550736907853195}
-  - component: {fileID: 2714550736907853194}
   - component: {fileID: 2714550736907853192}
   m_Layer: 0
   m_Name: MiniMapCamera
@@ -345,7 +344,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2359
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 02cca6dc8e25eba4787dda8fa1746b10, type: 2}
   m_TargetDisplay: 0
@@ -357,14 +356,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &2714550736907853194
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2714550736907853196}
-  m_Enabled: 1
 --- !u!114 &2714550736907853192
 MonoBehaviour:
   m_ObjectHideFlags: 0

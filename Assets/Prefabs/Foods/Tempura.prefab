@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000010238849466}
   - component: {fileID: 33000013615485954}
   - component: {fileID: 23000014036474788}
+  - component: {fileID: -359438150813960843}
   m_Layer: 3
   m_Name: Tempura
   m_TagString: Untagged
@@ -82,6 +83,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-359438150813960843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012244298164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b53fa6a4ebc66547bd0e1f6bce0fb2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QEvent: {fileID: 0}
 --- !u!1 &3773603308176558723
 GameObject:
   m_ObjectHideFlags: 0

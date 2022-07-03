@@ -7,6 +7,8 @@ TagManager:
   - CinemachineTarget
   - Ground
   - Water
+  - GoodFood
+  - BadFood
   layers:
   - Default
   - TransparentFX

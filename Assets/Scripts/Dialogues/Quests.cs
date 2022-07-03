@@ -15,13 +15,17 @@ public class Quests : MonoBehaviour
         QuestObject.PickUpQuestObject += CheckNumberObjects;
     }
 
-    void CheckNumberObjects()
+    void CheckNumberObjects(bool isGoodFood)
     {
-        Counter++;
-        if(Counter == MaxCount)
+        if (isGoodFood)
         {
-            QuestObject.PickUpQuestObject -= CheckNumberObjects;
-            endQuest1 = true;
+            Counter++;
+
+            if (Counter == MaxCount)
+            {
+                QuestObject.PickUpQuestObject -= CheckNumberObjects;
+                endQuest1 = true;
+            }
         }
     }
 
