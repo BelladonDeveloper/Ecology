@@ -47,4 +47,4 @@ MonoBehaviour:
   Text1: {fileID: 0}
   endQuest1: 0
   Counter: 0
-  MaxCount: 20
+  MaxCount: 10
