@@ -80345,6 +80345,10 @@ PrefabInstance:
       value: DialogJody
       objectReference: {fileID: 0}
     - target: {fileID: 2094314980225105526, guid: 4d1390030588bb14c88e4bb3dfe08a5b, type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 1113447731}
+    - target: {fileID: 2094314980225105526, guid: 4d1390030588bb14c88e4bb3dfe08a5b, type: 3}
       propertyPath: npc_task
       value: 
       objectReference: {fileID: 179932938}

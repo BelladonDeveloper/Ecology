@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NPC_Task : MonoBehaviour
 {
@@ -37,6 +38,8 @@ public class NPC_Task : MonoBehaviour
             else
             {
                 dialogue2.SetActive(true);
+
+                //SceneManager.LoadScene(1);
 
                 print("Finish quest )");
             }
