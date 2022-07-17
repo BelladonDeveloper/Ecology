@@ -9,36 +9,38 @@ public class DialogueNC : MonoBehaviour
     public GameObject Text2;
     public bool enddial;
 
-    [SerializeField] private Spawner spawner;
+    [SerializeField] private Spawner _spawner;
+    [SerializeField] private QuestSystem _dialogSystem;
 
     private bool isText1 = true;
-    
-    
+        
     void Update()
     {
         if(Input.GetMouseButtonDown(0))
         {
-            if(isText1 == true)
-            {
-                isText1 = false;
-            }
-            else
-            {
-                if(enddial == false)
-                {
-                    isText1 = true;
+            _dialogSystem.ContinueDialog();
 
-                    spawner.CreateFood();
+            //if(isText1 == true)
+            //{
+            //    isText1 = false;
+            //}
+            //else
+            //{
+            //    if(enddial == false)
+            //    {
+            //        isText1 = true;
 
-                    npc_task.end_Dialogue = true;
-                }
-                else
-                {
+            //        _spawner.CreateFood();
+
+            //        npc_task.end_Dialogue = true;
+            //    }
+            //    else
+            //    {
                     
-                    isText1 = true;
-                }
+            //        isText1 = true;
+            //    }
                 
-            }
+            //}
         }
         if(isText1 == true)
         {

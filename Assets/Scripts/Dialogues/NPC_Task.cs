@@ -9,6 +9,8 @@ public class NPC_Task : MonoBehaviour
     public Quests QE;
     public bool findial;
 
+    [SerializeField] private QuestSystem _dialogSystem;
+
     void Update()
     {
         if (end_Dialogue == true)
@@ -31,18 +33,21 @@ public class NPC_Task : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Time.timeScale = 0;
-            if (QE.endQuest1 == false)
-            {
-                dialogue.SetActive(true);
-            }
-            else
-            {
-                dialogue2.SetActive(true);
 
-                //SceneManager.LoadScene(1);
+            _dialogSystem.CheckQuest();
 
-                print("Finish quest )");
-            }
+            //if (QE.endQuest1 == false)
+            //{
+            //    dialogue.SetActive(true);
+            //}
+            //else
+            //{
+            //    dialogue2.SetActive(true);
+
+            //    //SceneManager.LoadScene(1);
+
+            //    print("Finish quest )");
+            //}
         }
     }
 }
