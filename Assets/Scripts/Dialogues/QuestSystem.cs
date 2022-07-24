@@ -58,6 +58,11 @@ public class QuestSystem : MonoBehaviour
         //_dialogUI.ShowPhrase(_phrase);
     }
 
+    public void ChangeState(QuestState state)
+    {
+        _questState = state;
+    }
+
     public enum QuestState
     {
         NoQuest,

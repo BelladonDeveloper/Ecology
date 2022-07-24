@@ -19,29 +19,8 @@ public class DialogueNC : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             _dialogSystem.ContinueDialog();
-
-            //if(isText1 == true)
-            //{
-            //    isText1 = false;
-            //}
-            //else
-            //{
-            //    if(enddial == false)
-            //    {
-            //        isText1 = true;
-
-            //        _spawner.CreateFood();
-
-            //        npc_task.end_Dialogue = true;
-            //    }
-            //    else
-            //    {
-                    
-            //        isText1 = true;
-            //    }
-                
-            //}
         }
+
         if(isText1 == true)
         {
             Text1.SetActive(true);

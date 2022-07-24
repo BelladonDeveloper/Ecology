@@ -6,27 +6,10 @@ public class NPC_Task : MonoBehaviour
     public bool end_Dialogue;
     public GameObject dialogue;
     public GameObject dialogue2;
-    public Quests QE;
+    public FoodQuest QE;
     public bool findial;
 
     [SerializeField] private QuestSystem _dialogSystem;
-
-    void Update()
-    {
-        if (end_Dialogue == true)
-        {
-            Time.timeScale = 1;
-            QE.Quest1 = true;
-            dialogue.SetActive(false);
-
-        }
-        if (findial == true)
-        {
-            Time.timeScale = 1;
-            QE.Quest1 = false;
-            dialogue.SetActive(false);
-        }
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -35,19 +18,6 @@ public class NPC_Task : MonoBehaviour
             Time.timeScale = 0;
 
             _dialogSystem.CheckQuest();
-
-            //if (QE.endQuest1 == false)
-            //{
-            //    dialogue.SetActive(true);
-            //}
-            //else
-            //{
-            //    dialogue2.SetActive(true);
-
-            //    //SceneManager.LoadScene(1);
-
-            //    print("Finish quest )");
-            //}
         }
     }
 }

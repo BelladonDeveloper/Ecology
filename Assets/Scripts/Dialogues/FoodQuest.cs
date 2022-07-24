@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Quests : MonoBehaviour
+public class FoodQuest : MonoBehaviour
 {
-    public bool Quest1;
-    public GameObject Text1;
-    public bool endQuest1;
+    [SerializeField] private QuestSystem _questSystem;
+
     public int Counter = 0;
     public int MaxCount = 10;
 
@@ -24,35 +23,15 @@ public class Quests : MonoBehaviour
             if (Counter == MaxCount)
             {
                 QuestObject.PickUpQuestObject -= CheckNumberObjects;
-                endQuest1 = true;
-            }
-        }
-    }
 
-    void Update()
-    {
-        if(endQuest1 == false)
-        {
-            if (Quest1 == true)
-            {
-                Text1.SetActive(true);
-            }
-            else
-            {
-                Text1.SetActive(false);
+                _questSystem.ChangeState(QuestSystem.QuestState.Complete);
             }
         }
-        else
-        {
-            Text1.SetActive(false);
-        }
-        
     }
 
 
     private void OnDestroy()
     {
         QuestObject.PickUpQuestObject -= CheckNumberObjects;
-
     }
 }
