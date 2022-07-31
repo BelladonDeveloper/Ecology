@@ -1,20 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FoodQuest : MonoBehaviour
 {
     [SerializeField] private QuestSystem _questSystem;
 
-    public int Counter = 0;
-    public int MaxCount = 10;
+    [SerializeField] private int Counter = 0;
+    [SerializeField] private int MaxCount = 10;
 
     private void Start()
     {
         QuestObject.PickUpQuestObject += CheckNumberObjects;
     }
 
-    void CheckNumberObjects(bool isGoodFood)
+    private void CheckNumberObjects(bool isGoodFood)
     {
         if (isGoodFood)
         {
@@ -29,9 +27,7 @@ public class FoodQuest : MonoBehaviour
         }
     }
 
+    public int GetQualityGoodFood() => Counter;
 
-    private void OnDestroy()
-    {
-        QuestObject.PickUpQuestObject -= CheckNumberObjects;
-    }
+    private void OnDestroy() => QuestObject.PickUpQuestObject -= CheckNumberObjects;
 }

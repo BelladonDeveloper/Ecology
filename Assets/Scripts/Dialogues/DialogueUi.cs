@@ -13,6 +13,19 @@ public class DialogueUi : MonoBehaviour
 
     public void EnableDialogWindow(bool isActive)
     {
+        SetTimeScale(!isActive);
         _panel.SetActive(isActive);
+    }
+
+    private void SetTimeScale(bool isGameActive)
+    {
+        if (isGameActive)
+        {
+            Time.timeScale = 1;
+        }
+        else
+        {
+            Time.timeScale = 0;
+        }
     }
 }

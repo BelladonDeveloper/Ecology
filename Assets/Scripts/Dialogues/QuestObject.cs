@@ -1,12 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using System;
 
 
 public class QuestObject : MonoBehaviour
 {
-    //public Quests QEvent;
     public bool IsGoodFood;
     public static event Action<bool> PickUpQuestObject; 
 
