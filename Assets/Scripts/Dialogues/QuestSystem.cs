@@ -11,10 +11,11 @@ public class QuestSystem : MonoBehaviour
     private QuestState _questState = QuestState.NoQuest;
 
     private string _phrase;
+    private bool _isDialogOpen = false;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && _isDialogOpen)
         {
             ContinueDialog();
         }
@@ -24,21 +25,24 @@ public class QuestSystem : MonoBehaviour
     {
         switch (_questState)
         {
-            case QuestState.NoQuest: break;
-            case QuestState.StartQuest:
+            case QuestState.NoQuest:
                 _phrase = _dialoguesSO.GetPhrase(1);
                 SetPhraseToUI();
                 _questState = QuestState.InProgress;
                 _spawner.CreateFood();
                 break;
+
             case QuestState.InProgress:
                 _dialogueUi.EnableDialogWindow(false);
+                _isDialogOpen = false;
                 break;
+
             case QuestState.Complete:
                 _phrase = _dialoguesSO.GetPhrase(5);
                 SetPhraseToUI();
                 _questState = QuestState.Finish;
                 break;
+
             case QuestState.Finish:
                 print("Finish quest )");
                 SceneManager.LoadScene(1);
@@ -48,18 +52,21 @@ public class QuestSystem : MonoBehaviour
 
     public void CheckQuest()
     {
+        _isDialogOpen = true;
+
         switch (_questState)
         {
             case QuestState.NoQuest:
                 OpenDialogWithPhrase(0);
-                _questState = QuestState.StartQuest;
                 break;
+
             case QuestState.InProgress:
                 _dialogueUi.EnableDialogWindow(true);
                 int qualityFood = _foodQuest.GetQualityGoodFood();
                 _phrase = _dialoguesSO.GetPhrase(2) + qualityFood + _dialoguesSO.GetPhrase(3);
                 SetPhraseToUI();
                 break;
+
             case QuestState.Complete:
                 OpenDialogWithPhrase(4);
                 break;
@@ -86,7 +93,6 @@ public class QuestSystem : MonoBehaviour
     public enum QuestState
     {
         NoQuest,
-        StartQuest,
         InProgress,
         Complete,
         Finish
