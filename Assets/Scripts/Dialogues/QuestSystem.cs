@@ -7,10 +7,19 @@ public class QuestSystem : MonoBehaviour
 {
     [SerializeField] private Spawner _spawner;
     [SerializeField] private DialoguesSO _dialoguesSO;
+    [SerializeField] private DialogueUi _dialogueUi;
 
     private QuestState _questState = QuestState.NoQuest;
 
     private string _phrase;
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            ContinueDialog();
+        }
+    }
 
     public void ContinueDialog()
     {
@@ -38,7 +47,8 @@ public class QuestSystem : MonoBehaviour
     {
         switch (_questState)
         {
-            case QuestState.NoQuest: 
+            case QuestState.NoQuest:
+                _dialogueUi.EnableDialogWindow(true);
                 _phrase = _dialoguesSO.GetPhrase(0);
                 break;
             case QuestState.InProgress:
@@ -55,7 +65,7 @@ public class QuestSystem : MonoBehaviour
 
     private void SetPhraseToUI()
     {
-        //_dialogUI.ShowPhrase(_phrase);
+        _dialogueUi.ShowText(_phrase);
     }
 
     public void ChangeState(QuestState state)

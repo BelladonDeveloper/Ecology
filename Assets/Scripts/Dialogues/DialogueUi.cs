@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DialogueUi : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private TMP_Text _textComponent;
+    [SerializeField] private GameObject _panel;
+
+    public void ShowText(string phrase)
     {
-        
+        _textComponent.text = phrase;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void EnableDialogWindow(bool isActive)
     {
-        
+        _panel.SetActive(isActive);
     }
 }
