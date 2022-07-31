@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33000013419704336}
   - component: {fileID: 23000010489384052}
   - component: {fileID: 257229625474583313}
+  - component: {fileID: 1970580461885354531}
   m_Layer: 3
   m_Name: Chili
   m_TagString: Untagged
@@ -95,7 +96,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b53fa6a4ebc66547bd0e1f6bce0fb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  QEvent: {fileID: 0}
+  IsGoodFood: 0
+--- !u!114 &1970580461885354531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000014236023566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa9decd2bf36494eae10744fbfc8e19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotor: {x: 0, y: 1, z: 0}
 --- !u!1 &9122711134495145878
 GameObject:
   m_ObjectHideFlags: 0
