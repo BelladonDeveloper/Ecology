@@ -1,20 +1,37 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class Good_BadFoodCounter : MonoBehaviour
 {
-    [SerializeField] private sbyte s;
-    [SerializeField] private Text _text;
-    // Start is called before the first frame update
+     private FoodQuest FoodQuest;
+    [SerializeField] private TMP_Text _textGoodFood;
+    [SerializeField] private TMP_Text _textBadfood;
+    private int _counterGoodFood;
+     private int _counterBadFood;
+
+
     void Start()
     {
-        
+        QuestObject.PickUpQuestObject += UpdateNumberFood;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateNumberFood(bool isGoodFood)
     {
+        if (isGoodFood)
+        {
+            _counterGoodFood++;
+            _textGoodFood.text = $"Good Food: {_counterGoodFood}";
+        }
+        else
+        {
+            _counterBadFood++;
+            _textBadfood.text = $"Bad Food: {_counterBadFood}";
+        }
         
+
+
     }
 }
