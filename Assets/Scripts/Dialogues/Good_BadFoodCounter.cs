@@ -2,15 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 public class Good_BadFoodCounter : MonoBehaviour
 {
-     private FoodQuest FoodQuest;
     [SerializeField] private TMP_Text _textGoodFood;
     [SerializeField] private TMP_Text _textBadfood;
+
     private int _counterGoodFood;
-     private int _counterBadFood;
+    private int _counterBadFood;
 
 
     void Start()
@@ -30,8 +29,5 @@ public class Good_BadFoodCounter : MonoBehaviour
             _counterBadFood++;
             _textBadfood.text = $"Bad Food: {_counterBadFood}";
         }
-        
-
-
     }
 }

@@ -8,8 +8,6 @@ public class NPC_Task : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Time.timeScale = 0;
-
             _dialogSystem.CheckQuest();
         }
     }
