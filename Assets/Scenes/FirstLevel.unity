@@ -12782,7 +12782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _questSystem: {fileID: 339929420}
   Counter: 0
-  MaxCount: 2
+  MaxCount: 10
 --- !u!1001 &342047193
 PrefabInstance:
   m_ObjectHideFlags: 0
