@@ -26,7 +26,7 @@ public class QuestSystem : MonoBehaviour
         switch (_questState)
         {
             case QuestState.NoQuest:
-                _phrase = _dialoguesSO.GetPhrase(1);
+                
                 SetPhraseToUI();
                 _questState = QuestState.InProgress;
                 _spawner.CreateFood();
