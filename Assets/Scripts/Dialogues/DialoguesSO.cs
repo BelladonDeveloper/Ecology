@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +5,7 @@ using UnityEngine;
 public class DialoguesSO : ScriptableObject
 {
     [SerializeField] private List<string> _phrases = new List<string>();
+    [SerializeField] private List<string> _uiTexts = new List<string>();
 
     public string GetPhrase(int index)
     {
@@ -17,5 +17,17 @@ public class DialoguesSO : ScriptableObject
         }
 
         return phrase;
+    }
+
+    public string GetUIText(int index)
+    {
+        string uiText = _uiTexts[index];
+
+        if (index > _uiTexts.Count - 1)
+        {
+            return _uiTexts[0];
+        }
+
+        return uiText;
     }
 }
